@@ -69,3 +69,15 @@ Assign the @IBOutlet in ModalController.swift:
 ```Swift
 @IBOutlet var content: UIView!
 ```
+
+#### Hello World Example used in screenshot
+```Swift
+let modal = ModalController()
+modal.contentMake(wid: 300.0, hgt: 300.0, bgColor: UIColor.whiteColor(), cornerRad: 15)
+let label = UILabel(frame: modal.content.bounds)
+label.text = "Hello World"
+label.textAlignment = .Center
+label.font = UIFont.systemFontOfSize(30)
+modal.content.addSubview(label)
+presentViewController(modal, animated: true, completion: nil)
+```
