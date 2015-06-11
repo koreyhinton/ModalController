@@ -37,7 +37,7 @@ class ModalController: UIViewController {
         self.content = contentView
     }
     
-    var onViewDidLayoutSubviews: ((UIView)->Void)?
+    var onViewDidLayoutSubviews: ((modalBGView:UIView,contentView:UIView)->Void)?
     var onClose: (()->Void)?
     var onCloseCompletion: (()->Void)?
     
@@ -103,7 +103,7 @@ class ModalController: UIViewController {
         super.viewDidLayoutSubviews()
         
         content!.center = view.center
-        onViewDidLayoutSubviews?(view) // custom positioning
+        onViewDidLayoutSubviews?(modalBGView:view, contentView:content) // custom positioning
     }
     
 }
