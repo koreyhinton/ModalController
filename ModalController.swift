@@ -1,6 +1,6 @@
 //
 //  ModalController.swift
-//  ModalTest
+//  ModalController
 //
 //  Created by Korey Hinton on 6/11/15.
 //  Copyright © 2015 Korey Hinton. All rights reserved.
