@@ -1,6 +1,8 @@
 # ModalController
 Modal for iOS 8
 
+![](screenshot.png)
+
 #### Simplest Usage
 ```Swift
 let modal = ModalController()
